@@ -1,0 +1,38 @@
+/* 
+  Unidad de MEdida Fr
+
+  Esta unidad nos permite fraccionar nuestra grilla o grid en fracciones.
+
+  Se utiliza en las propiedades grid-template-columns de filas y columnas, separadas por un espacio.
+    
+    grid-template-columns: 1fr 1fr 1fr; -> Crea 3 columnas que mediran 1 Fración del espacio disponible del contenedor.
+
+    grid-template-rows: 1fr 2fr; -> Crea 2 filas, la primera mide 1 fraccion del espacio disponible y la segunda el doble o 2 fracciones del espacio disponible. 
+
+
+*/
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: lightpink;
+}
+
+.item {
+  color: black;
+  background-color: lightseagreen;
+}
+

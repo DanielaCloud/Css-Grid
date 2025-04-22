@@ -10,6 +10,8 @@
   container -> Elemento padre al que se le habilita grid o la grilla 
 
   items -> Elementos hijos que se encuenran dentro del padre y se verán afectados por la grilla.
+ 
+GRID o Columnas
 
 Para usar grid y sus propiedades debemos asignar al container el valor ´grid´ en su propiedad display 
    
@@ -22,6 +24,8 @@ Para definir el número y tamaño de las columnas del grid usamos la propiedad:
    Definimos el tamaño de cada colmna separados por un espacio. Podemos definiar tantas columnas como necesitemos.
 
     grid-template-columns: 100px 200px 500px; 
+
+    ROWS o FILAS
 
   Para definir el número y tamaño de las filas del grid usamos la propiedad: after
     
@@ -45,7 +49,7 @@ Para definir el número y tamaño de las columnas del grid usamos la propiedad:
 .container {
   display: grid;
   grid-template-columns:  100px 200px;
-  grid-template-rows: 100px 200px ;
+  grid-template-rows: 100px 200px 100px 200px;
   background-color: fuchsia;
   border: 2px solid lightseagreen;
 }
